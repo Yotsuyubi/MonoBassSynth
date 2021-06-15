@@ -1,0 +1,14 @@
+[package]
+name = "MonoBassSynth"
+version = "0.1.0"
+authors = ["Psykhedelic_Mandala"]
+edition = "2018"
+
+[dependencies]
+vst = { git = "https://github.com/RustAudio/vst-rs.git", rev = "a398697b" }
+vst-gui = { git = "https://github.com/Yotsuyubi/rust-vst-gui.git", rev = "72a3b4f" }
+rand = "0.8.3"
+
+[lib]
+name = "basicvst"
+crate-type = ["cdylib"]
